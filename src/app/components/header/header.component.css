@@ -1,0 +1,28 @@
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #02b3e4;
+    overflow: hidden;
+}
+
+.head {
+    width: auto;
+}
+
+.nav-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    max-width: 1024px;
+    margin-bottom: 10px;
+}
+
+.title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #ffffff;
+}

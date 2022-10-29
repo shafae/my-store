@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <div class="detail-container">
+
+        <img class="img" src='{{product.url}}'>
+        <div class="detail-item">
+            <p class="product-detail product-title">{{product.name}}</p>
+            <p class="product-detail">{{product.price | currency}}
+                <p class="product-detail">
+                    <p>{{product.description}}</p>
+
+                    <select class="select-input product-detail" (ngModelChange)="selectAmount($event)" [(ngModel)]="productAmount">
+            <option *ngFor="let number of list">{{number}}</option>
+          </select>
+
+                    <button class="add-btn " (click)="addToCart(product)">Add to cart</button>
+                    <a class="back-link product-detail" [routerLink]='"/"'>Back to product list</a>
+        </div>
+    </div>
+</body>
+
+</html>
